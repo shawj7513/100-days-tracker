@@ -1,0 +1,23 @@
+// Cloudflare config: tells wrangler what to deploy and what it's connected to.
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "100-days-tracker",
+  "main": "src/main.py",
+  "compatibility_date": "2026-11-01",
+  "compatibility_flags": ["python_workers"],
+
+  // Your HTML/CSS/JS lives in ./public and is served as-is.
+  // Requests to /api/* skip the files and go to your Python code instead.
+  "assets": {
+    "directory": "./public",
+    "binding": "ASSETS",
+    "run_worker_first": ["/api/*"]
+  },
+
+  // Your phone opens this address. Wrangler creates the DNS record on deploy.
+  "routes": [
+    { "pattern": "100days.shawtechlab.com", "custom_domain": true }
+  ]
+
+  // D1 database binding gets added here once the database is created.
+}

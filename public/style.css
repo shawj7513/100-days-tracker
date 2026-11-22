@@ -1,0 +1,8 @@
+/* TODO 4.2: make it look like the poster.
+   - 7 columns of 15 rows, numbers running DOWN each column (1-15, 16-30, ...).
+     Look up CSS Grid and `grid-auto-flow: column`.
+   - Gray squares, blue numbers (#5a6aa6 is close to the poster).
+   - A completed day: green background and a check mark.
+   - A day in progress (time logged but not complete): what color? You decide.
+   - Phone first. Seven columns on a ~380px-wide screen: how big can a square be?
+*/

@@ -1,0 +1,8 @@
+.venv/
+.venv-workers/
+python_modules/
+__pycache__/
+node_modules/
+.wrangler/
+.dev.vars
+*.pyc

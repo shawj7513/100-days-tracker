@@ -1,0 +1,22 @@
+-- MILESTONE 1: design your database
+--
+-- This file creates your tables. You write it; nothing is here yet on purpose.
+-- Run it locally with:   npx wrangler d1 execute 100-days-tracker --local --file=schema.sql
+-- Run it for real with:  npx wrangler d1 execute 100-days-tracker --remote --file=schema.sql
+--
+-- Answer these on paper BEFORE writing any SQL:
+--
+--   1. List the "things" your app keeps track of. (Hint: you told me two of
+--      them in your request: the 100 course days, and the sittings you
+--      spend coding.)
+--   2. For each thing, what facts do you store about it? Those are columns.
+--   3. Day 9 took you a month. How many coding sessions belong to ONE course day?
+--      Can one session belong to two course days? That answer decides where the
+--      "which day is this for" column lives.
+--   4. Should "total minutes for day 9" be a column you store, or something you
+--      CALCULATE from the sessions every time? What goes wrong if you store it?
+--   5. What type is a date in SQLite? (Look it up. The answer is surprising.)
+--
+-- TODO 1.1: CREATE TABLE ...
+-- TODO 1.2: CREATE TABLE ...
+-- TODO 1.3: seed data: insert YOUR real history so far (days 1-9 complete, etc.)

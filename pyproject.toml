@@ -1,0 +1,14 @@
+[project]
+name = "100-days-tracker"
+version = "0.1.0"
+description = "Check-off poster for 100 Days of Python, with time logged per day"
+requires-python = ">=3.13"
+dependencies = [
+    "fastapi",
+]
+
+[dependency-groups]
+dev = [
+    "workers-py",
+    "workers-runtime-sdk",
+]
