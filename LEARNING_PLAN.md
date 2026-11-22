@@ -115,8 +115,34 @@ you're repeating the same three lines. That's the point of functions.
 - [ ] **Test on your actual phone.** Solve the "phones have no right-click" problem.
 - [ ] Log-a-session form inside the details panel
 
-## Milestone 6: stretch goals
-- [ ] TODO 6.1 streak counter: consecutive calendar days with ≥ 20 minutes
+## Milestone 6: stats and summary (TODO 6.x)
+One `GET /api/stats` route, built out of many small functions, one per number.
+That's the best function practice in the whole project.
+
+- [ ] Start date (first session ever) and days elapsed since then
+- [ ] Course days complete, as a count and a %
+- [ ] Total hours logged, and average minutes per completed course day
+- [ ] **Average real calendar days per course day** (day 9 took ~30)
+- [ ] **Projected finish date** = today + (days remaining × that average)
+- [ ] Current streak and longest streak of ≥ 20-minute calendar days (TODO 6.1)
+- [ ] Hardest day so far (most minutes)
+
+**Think:** you finished days 1-8 fast and day 9 slow. Should the projection use
+your all-time average or only your last 5 completed days? Try both and see
+which number you believe. Later course days are longer projects, so an honest
+projection probably gets *later* over time. That's fine: it's data, not a judgment.
+
+**Think:** "real days to complete day 9": count from when day 8 was completed?
+Or from day 9's first session? These give different answers. Pick one and
+write down why.
+
+## Milestone 7: stretch goals
+- [ ] Habit heatmap: a small calendar grid (like GitHub's contribution graph)
+      where each square is a real calendar date, colored by minutes logged.
+      Green for ≥ 20. This shows your *habit*, while the poster shows *progress*.
+- [ ] Quick-log button on the home screen: "+20 min on my current day" in one tap
+- [ ] Notes field per session ("finally got the recursion to click")
+- [ ] Export everything to CSV (practice for the WGU data-handling units)
 - [ ] Lock it down so only you can edit (ask me about Cloudflare Access when you get here)
 - [ ] Add to home screen on your phone so it opens like an app
 - [ ] A notes field per session ("finally got the recursion to click")

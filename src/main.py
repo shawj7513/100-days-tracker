@@ -58,10 +58,18 @@ async def health():
 
 
 # ---------------------------------------------------------------------------
-# MILESTONE 6 (stretch): your 20-minutes-a-day habit
+# MILESTONE 6: stats and summary
 # ---------------------------------------------------------------------------
 
-# TODO 6.1: GET /api/streak
+# TODO 6.0: GET /api/stats
+#   Return one dict of summary numbers (see LEARNING_PLAN.md for the list).
+#   Don't write one giant function. Write one small function per stat,
+#   e.g. average_real_days_per_course_day(...), projected_finish_date(...),
+#   and have this route just call them and collect the results.
+#   Bonus: most of those small functions don't need the database at all if
+#   you pass them a list of rows. That makes them easy to test with plain Python.
+
+# TODO 6.1: current_streak(...) and longest_streak(...)
 #   How many calendar days in a row (ending today) did you log >= 20 minutes?
 #   Note this is a DIFFERENT question than "which course day are you on".
 #   This one is the heart of why you're building this app.
