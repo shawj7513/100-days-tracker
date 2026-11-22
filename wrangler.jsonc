@@ -17,7 +17,14 @@
   // Your phone opens this address. Wrangler creates the DNS record on deploy.
   "routes": [
     { "pattern": "100days.shawtechlab.com", "custom_domain": true }
-  ]
+  ],
 
-  // D1 database binding gets added here once the database is created.
+  // Your database. In Python you reach it as request.scope["env"].DB
+  "d1_databases": [
+    {
+      "binding": "DB",
+      "database_name": "100-days-tracker",
+      "database_id": "f23db8f6-b571-4453-9fd6-33b369cabdca"
+    }
+  ]
 }
